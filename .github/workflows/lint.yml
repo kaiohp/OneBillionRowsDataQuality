@@ -19,3 +19,6 @@ jobs:
         cache: poetry
     - name: Install Dependencies
       run: poetry install
+
+    - name: Lintting and Formmating Test
+      uses: pre-commit/action@v3.0.1
