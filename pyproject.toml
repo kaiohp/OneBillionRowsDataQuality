@@ -43,3 +43,9 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.isort]
 profile = "black"
+
+[tool.taskipy.tasks]
+tests = { cmd = "poetry run pytest ", help = "runs all unit tests" }
+run = { cmd = "poetry run python src/main.py ", help = "runs ETL" }
+docs = { cmd = "poetry run mkdocs serve ", help = "run the documentation serve" }
+kill = { cmd = "kill -9 $(lsof -t -i :8000)", help = "kill the process running in port 8000" }
