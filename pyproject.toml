@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "onebillionrowsdataquality"
+version = "0.1.0"
+description = "\"OneBillionRows with DataQuality project aims to ensure the integrity and quality of massive datasets comprising one billion rows. It harnesses the capabilities of Python 3.11.5 and advanced data quality libraries like Pydantic, Pandera, DuckDB, Pandas, and Dash.\""
+authors = ["Kaio Silva <kaiohp.silva1@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.6.2"
+dash = "^2.15.0"
+pandera = "^0.18.0"
+pandas = "^2.2.1"
+duckdb = "^0.10.0"
+
+
+[tool.poetry.group.dev.dependencies]
+mkdocs = "^1.5.3"
+mkdocs-material = "^9.5.11"
+mkdocs-mermaid2-plugin = "^1.1.1"
+pre-commit = "^3.6.2"
+commitizen = "^3.15.0"
+pytest = "^8.0.1"
+black = "^24.2.0"
+isort = "^5.13.2"
+flake8 = "^7.0.0"
+flake8-bugbear = "^24.2.6"
+
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "pep440"
+version_provider = "poetry"
+update_changelog_on_bump = true
+major_version_zero = true
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
