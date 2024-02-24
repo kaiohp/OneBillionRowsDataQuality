@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "onebillionrowsdataquality"
-version = "0.1.0"
+version = "0.2.0"
 description = "\"OneBillionRows with DataQuality project aims to ensure the integrity and quality of massive datasets comprising one billion rows. It harnesses the capabilities of Python 3.11.5 and advanced data quality libraries like Pydantic, Pandera, DuckDB, Pandas, and Dash.\""
 authors = ["Kaio Silva <kaiohp.silva1@gmail.com>"]
 license = "MIT"
