@@ -1,17 +1,21 @@
-# Welcome to MkDocs
+# Welcome to OneBillionRow with Data Quality
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+For source code visit [kaiohp/OneBillionRowsDataQuality](https://github.com/kaiohp/OneBillionRowsDataQuality).
 
 ## Project layout
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+        .
+        ├── CHANGELOG.md
+        ├── LICENSE
+        ├── README.md
+        ├── docs
+        │   └── index.md
+        ├── mkdocs.yml
+        ├── poetry.lock
+        ├── pyproject.toml
+        ├── src
+        │   └── __init__.py
+        └── tests
+            └── __init__.py
+
+![home](./pics/github.png)
